@@ -2,6 +2,11 @@ html, body {
 	height: 100%;
 }
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 
 .bg-main {
 	background-image: url("images/background.jpg");
