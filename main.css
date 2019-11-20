@@ -1,41 +1,33 @@
 html, body {
 	height: 100%;
 	font-family: Courier;
+	scroll-behavior: smooth;
 }
 
+/* Desktop main screen style */
+@media only screen and (min-width: 961px) {
+	.bg-main {
+		background-image: url("images/background.jpg");
+		/* Full height */
+		height: 100%;
+		overflow: hidden;
 
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+	  /* Center and scale the image nicely */
+		background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
 }
 
+/* Mobile main screen style */
+@media only screen and (max-width: 400px){
+	.bg-main {
+		background-color: red;
+		/* Full height */
 
-.bg-main {
-	background-image: url("images/background.jpg");
-	/* Full height */
-	height: 100%;
-	overflow: hidden;
-
-  /* Center and scale the image nicely */
-	background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px){
-.bg-main {
-	background-image: url("images/background.jpg");
-	/* Full height */
-	height: 100%;
-	overflow: hidden;
-
-  /* Center and scale the image nicely */
-	background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+	  /* Center and scale the image nicely */
+	}
 }
 
 .bg-second {
@@ -63,20 +55,8 @@ html, body {
 	font-weight: bold;
 }
 
-.btn-style {
-	background-color: white;
-	color: black;
-	border: 0px solid black;
-}
-
-.btn-style:hover {
-	background-color: #cd8c95;
-	border: 0px solid black;
-}
-
-.btn-style:active {
-	background-color: #cd8c95;
-	border: 0px solid black;
+.navbar-link-active {
+	border-bottom: 2px solid #e74c3c;
 }
 
 .custom-container {
@@ -90,10 +70,6 @@ html, body {
        1px 1px 0 #000;
 }
 
-.logo{
-	padding: 0px;
-}
-
 .logo>img {
 	height: 30%;
 	width: 30%;
@@ -103,9 +79,9 @@ html, body {
 
 
 .main-title {
-	margin-top: 1.4em;
+	margin-top: 16vw;
 	font-family: Lobster;
-	font-size: 200px;
+	font-size: 12vw;
 	color: #F5F5F5;
 
 }
@@ -151,9 +127,6 @@ html, body {
 
 }
 
-.active {
-	border-bottom: 2px solid #e74c3c;
-}
 
 #our-story {
 	top: -55px;
@@ -165,7 +138,7 @@ html, body {
 }
 
 .contact-us-header {
-	font-size: 200px;
+	font-size: 12vw;
 	font-family: Lobster;
 	color: white;
 }
@@ -218,7 +191,7 @@ html, body {
 
 /* Social Media Button Styles */
 .socials {
-  margin: 0em 20em;
+  margin: 0vw 36vw;
 	font-size: 30px;
 }
 
