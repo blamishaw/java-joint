@@ -169,7 +169,7 @@ html, body {
 
 .searchbar:hover > .search_input{
 		padding: 0 10px;
-		width: 250px;
+		width: 15vw;
 		caret-color:red;
 		transition: width 0.4s linear;
 }
