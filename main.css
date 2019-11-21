@@ -38,6 +38,7 @@ html, body {
 	margin: 1.5vw;
 }
 
+/* Navbar non-Bootstrap styles */
 .header {
 	background: #F5F5F5;
 	position: fixed;
@@ -59,6 +60,7 @@ html, body {
 	border-bottom: 2px solid #e74c3c;
 }
 
+/* Style to add black shadow to text */
 .custom-container {
 	width: 100%;
 	text-align: center;
@@ -167,7 +169,7 @@ html, body {
 
 .searchbar:hover > .search_input{
 		padding: 0 10px;
-		width: 450px;
+		width: 250px;
 		caret-color:red;
 		transition: width 0.4s linear;
 }
