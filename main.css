@@ -21,9 +21,12 @@ html, body {
 }
 
 /* Mobile main screen style */
-@media only screen and (max-width: 400px){
+@media only screen and (min-width:480px){
 	.bg-main {
-		background-color: red;
+		height: 100%;
+		overflow: hidden;
+		background-color: tan;
+
 		/* Full height */
 
 	  /* Center and scale the image nicely */
@@ -65,7 +68,7 @@ html, body {
 	width: 100%;
 	text-align: center;
 	text-shadow:
-       3px 3px 0 #000,
+       1px 1px 0 #000,
      -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
@@ -81,15 +84,16 @@ html, body {
 
 
 .main-title {
-	margin-top: 16vw;
-	font-family: Lobster;
+	margin-top: 18vw;
+	font-family: Garamond;
+	font-weight: bold;
 	font-size: 12vw;
 	color: #F5F5F5;
 
 }
 
 .sub-title {
-	font-family: Lobster;
+	font-family: Garamond;
 	font-size: 40px;
 	color: white;
 }
@@ -98,11 +102,30 @@ html, body {
 	font-size: 70px;
 }
 
-.main-content {
-	width: 100%;
-	display: flex;
+/* Desktop CSS for About Portion */
+@media only screen and (min-width: 961px){
+	.main-content {
+		display: grid;
+		grid-template-areas:
+				"text image";
+		column-gap: 3vw;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
+/* Mobile CSS for About Portion */
+@media only screen and (max-width: 480px){
+	.main-content {
+		display: grid;
+		grid-template-areas:
+				"text"
+				"image";
+		grid-row-gap: 10vw;
+		justify-content: center;
+		align-items: center;
+	}
+}
 
 .about-header {
 	font-size: 90px;
@@ -110,23 +133,22 @@ html, body {
 	font-family: Lobster;
 }
 
-.content-block {
-	padding: 0.4em;
-	margin: 1.2in;;
+.our-mission-text{
 	text-align: left;
-}
-
-.content-block>p{
-	margin-top: 40px;
 	font-size: 22px;
+	margin: 40px 40px;
+	grid-area: "text";
 }
 
+.our-mission-img {
+	object-fit: cover;
+	margin: 30px 30px;
+	grid-area: "image";
+}
 
-.content-block>img {
-	object-fit: contain;
-	border: 0px solid #f0dfcd;
-	border-radius: 30px;
-
+.our-mission-img img{
+	 max-width: 75%;
+	 border-radius: 30px;
 }
 
 
@@ -141,7 +163,7 @@ html, body {
 
 .contact-us-header {
 	font-size: 12vw;
-	font-family: Lobster;
+	font-family: Garamond bold;
 	color: white;
 }
 
