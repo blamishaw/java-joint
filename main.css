@@ -32,7 +32,7 @@ html, body {
 	.bg-main {
 		margin-top: 30vw;
 		overflow: hidden;
-		background-color: tan;
+		background-image: url("images/background.jpg");
 
 		/* Full height */
 
@@ -72,7 +72,7 @@ html, body {
 
 /* Style to add black shadow to text */
 .custom-container {
-	margin: 18vw 0;
+	margin: 18vw auto;
 	width: 100%;
 	text-align: center;
 	text-shadow:
@@ -127,7 +127,6 @@ html, body {
 /* Mobile CSS for About Portion */
 @media only screen and (max-width: 480px){
 	.main-content {
-		height: auto;
 		display: grid;
 		grid-template-areas:
 				"text"
@@ -161,6 +160,7 @@ html, body {
 .our-mission-img img{
 	 max-width: 75%;
 	 border-radius: 30px;
+	 align-items: center;
 }
 
 
@@ -170,7 +170,7 @@ html, body {
 }
 
 .contact-container {
-	padding: 20% 2.5em;
+	padding: 2.5em 2.5em;
 }
 
 .contact-us-header {
@@ -227,7 +227,7 @@ html, body {
 
 /* Social Media Button Styles */
 .socials {
-  margin: 0vw 36vw;
+  margin: -20vw 40vw;
 	font-size: 30px;
 }
 
