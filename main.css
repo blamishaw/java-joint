@@ -4,8 +4,15 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+@media only screen and (max-width:961px){
+	body {
+		padding-top: 10%;
+	}
+}
+
+
 /* Desktop main screen style */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 480px) {
 	.bg-main {
 		background-image: url("images/background.jpg");
 		/* Full height */
@@ -21,9 +28,9 @@ html, body {
 }
 
 /* Mobile main screen style */
-@media only screen and (min-width:480px){
+@media only screen and (max-width:480px){
 	.bg-main {
-		height: 100%;
+		margin-top: 30vw;
 		overflow: hidden;
 		background-color: tan;
 
@@ -65,10 +72,11 @@ html, body {
 
 /* Style to add black shadow to text */
 .custom-container {
+	margin: 18vw 0;
 	width: 100%;
 	text-align: center;
 	text-shadow:
-       1px 1px 0 #000,
+       2px 2px 0 #000,
      -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
@@ -83,8 +91,9 @@ html, body {
 }
 
 
+/* Mobile Main Title Style */
+
 .main-title {
-	margin-top: 18vw;
 	font-family: Garamond;
 	font-weight: bold;
 	font-size: 12vw;
@@ -99,12 +108,13 @@ html, body {
 }
 
 .smaller {
-	font-size: 70px;
+	font-size: 30px;
 }
 
 /* Desktop CSS for About Portion */
-@media only screen and (min-width: 961px){
+@media only screen and (min-width: 900px){
 	.main-content {
+		height: 100%;
 		display: grid;
 		grid-template-areas:
 				"text image";
@@ -117,6 +127,7 @@ html, body {
 /* Mobile CSS for About Portion */
 @media only screen and (max-width: 480px){
 	.main-content {
+		height: auto;
 		display: grid;
 		grid-template-areas:
 				"text"
@@ -142,7 +153,8 @@ html, body {
 
 .our-mission-img {
 	object-fit: cover;
-	margin: 30px 30px;
+	margin: 3vw 3vw;
+	min-width: 20px;
 	grid-area: "image";
 }
 

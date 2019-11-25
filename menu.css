@@ -1,0 +1,20 @@
+@import "main.css";
+
+.all-card-decks {
+  margin: 15% 5vw;
+}
+
+.card-deck-spacing {
+  margin-bottom: 5%;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.card .card-spacing {
+  max-width: 25rem;
+  min-width: 10rem;
+  margin: 0 0;
+  border-radius: 30px;
+}
