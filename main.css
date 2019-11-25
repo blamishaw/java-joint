@@ -170,7 +170,7 @@ html, body {
 }
 
 .contact-container {
-	padding: 2.5em 2.5em;
+	margin: -8vw 1vw;
 }
 
 .contact-us-header {
@@ -188,7 +188,9 @@ html, body {
     background-color: #353b48;
     border-radius: 30px;
     padding: 10px;
-    }
+		display: flex;
+		overflow: hidden;
+}
 
 .search_input{
 		color: white;
@@ -198,12 +200,12 @@ html, body {
 		width: 0;
 		caret-color:transparent;
 		line-height: 40px;
-		transition: width 0.4s linear;
+		transition: width 0.2s linear;
 }
 
 .searchbar:hover > .search_input{
 		padding: 0 10px;
-		width: 15vw;
+		width: 100px;
 		caret-color:red;
 		transition: width 0.4s linear;
 }
@@ -212,6 +214,7 @@ html, body {
 		background: white;
 		color: #e74c3c;
 }
+
 
 .search_icon{
 		height: 40px;
@@ -267,4 +270,19 @@ html, body {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+@media (min-width: px) and (max-width: 1300px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
 }
