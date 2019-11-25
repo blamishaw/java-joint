@@ -4,8 +4,32 @@ body {
   background-color :#F5F5F5;
 }
 
+h1 {
+  font-family: Garamond;
+}
+
+@media screen and (min-width: 961px){
+  h1 {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 12%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 961px){
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30%;
+    margin-bottom: 0;
+  }
+}
+
+
+
 .all-card-decks {
-  margin-top: 15%;
+  margin-top: 3%;
   margin-right: 5vw;
   margin-left: 5vw;
 }
