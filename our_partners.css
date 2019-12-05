@@ -26,10 +26,63 @@ h1 {
   }
 }
 
+/* Desktop CSS for Our Partners Portion */
+@media only screen and (min-width: 900px){
+	.partner-content {
+		height: 100%;
+		display: grid;
+		grid-template-areas:
+				"text image";
+		column-gap: 3vw;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* Mobile CSS for Our Partners Portion */
+@media only screen and (max-width: 480px){
+	.partner-content {
+		display: grid;
+		grid-template-areas:
+				"text"
+				"image";
+		grid-row-gap: 10vw;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 .bg-partner {
   background-color: #FFFFFF;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 25px 40px 40px 40px;
+}
+
+.our-partners-text{
+  text-align: left;
+	font-size: 22px;
+	margin: 25px 25px 40px 25px;
+  width: 90%;
+}
+
+.our-partners-img {
+  object-fit: fill;
+  padding: 30px;
+}
+
+.our-partners-img img{
+  width: 35vw;
+	border-radius: 30px;
+	align-items: center;
+}
+
+a:link {
+  color: #965030;
+}
+
+a:visited {
+  color: #965030;
+}
+
+a:hover {
+  color: #633722;
 }
