@@ -75,6 +75,7 @@ h1 {
 	align-items: center;
 }
 
-a:link {
-  color: #965030;
+.brown {
+  text-decoration: none;
+  color: #5C3336;
 }
