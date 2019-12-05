@@ -1,0 +1,237 @@
+html, body {
+	height: 100%;
+	font-family: Courier;
+	scroll-behavior: smooth;
+}
+
+/* Desktop main screen style */
+@media only screen and (min-width: 961px) {
+	.bg-main {
+		background-image: url("images/background.jpg");
+		/* Full height */
+		height: 100%;
+		overflow: hidden;
+
+	  /* Center and scale the image nicely */
+		background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+}
+
+/* Mobile main screen style */
+@media only screen and (max-width: 400px){
+	.bg-main {
+		background-color: red;
+		/* Full height */
+
+	  /* Center and scale the image nicely */
+	}
+}
+
+.bg-second {
+	background-color :#F5F5F5;
+}
+
+.spacing>li{
+	margin: 1.5vw;
+}
+
+/* Navbar non-Bootstrap styles */
+.header {
+	background: #F5F5F5;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	box-shadow: 0 5px 4px -1px rgba(0,0,0,.5);
+
+}
+
+.navbar-links li {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar-link-active {
+	border-bottom: 2px solid #e74c3c;
+}
+
+/* Style to add black shadow to text */
+.custom-container {
+	width: 100%;
+	text-align: center;
+	text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.logo>img {
+	height: 30%;
+	width: 30%;
+	-o-object-fit: contain;
+  object-fit: contain;
+}
+
+
+.main-title {
+	margin-top: 16vw;
+	font-family: Lobster;
+	font-size: 12vw;
+	color: #F5F5F5;
+
+}
+
+.sub-title {
+	font-family: Lobster;
+	font-size: 40px;
+	color: white;
+}
+
+.smaller {
+	font-size: 70px;
+}
+
+.main-content {
+    padding-top: 2%;
+	width: 100%;
+	display: flex;
+}
+
+
+.about-header {
+	font-size: 90px;
+	font-weight: bold;
+	font-family: Lobster;
+}
+
+.content-block {
+	padding: 0.4em;
+	margin: 1.2in;;
+	text-align: left;
+}
+
+.content-block>p{
+	margin-top: 40px;
+	font-size: 22px;
+}
+
+
+.content-block>img {
+	object-fit: contain;
+	border: 0px solid #f0dfcd;
+	border-radius: 30px;
+
+}
+
+
+#our-story {
+	top: -55px;
+	position:relative;
+}
+
+.contact-container {
+	padding: 20% 2.5em;
+}
+
+.contact-us-header {
+	font-size: 12vw;
+	font-family: Lobster;
+	color: white;
+}
+
+
+/* Searchbar Effects */
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+.search_input{
+		color: white;
+		border: 0;
+		outline: 0;
+		background: none;
+		width: 0;
+		caret-color:transparent;
+		line-height: 40px;
+		transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+		padding: 0 10px;
+		width: 15vw;
+		caret-color:red;
+		transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+		background: white;
+		color: #e74c3c;
+}
+
+.search_icon{
+		height: 40px;
+		width: 40px;
+		float: right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		color:white;
+		text-decoration:none;
+}
+
+/* Social Media Button Styles */
+.socials {
+  margin: 0vw 36vw;
+	font-size: 30px;
+}
+
+
+.fa {
+  padding: 25px;
+  width: 80px;
+	height: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 9px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+		color: white;
+		text-decoration: none;
+		border: 4px solid white;
+		padding: 22px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
