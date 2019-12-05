@@ -287,15 +287,3 @@ html, body {
         float:none;
     }
 }
-
-a:link {
-  color: #965030;
-}
-
-a:visited {
-  color: #965030;
-}
-
-a:hover {
-  color: #633722;
-}
