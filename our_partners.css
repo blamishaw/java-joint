@@ -57,6 +57,10 @@ h1 {
   margin: 25px 40px 40px 40px;
 }
 
+.bg-partner a{
+  color: #FF8C00
+}
+
 .our-partners-text{
   text-align: left;
 	font-size: 22px;

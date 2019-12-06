@@ -13,6 +13,19 @@ html, body {
 
 /* Desktop main screen style */
 @media only screen and (min-width: 480px) {
+	.bg-index {
+		background-image: url("images/background.jpg");
+		/* Full height */
+		height: 100%;
+		overflow: hidden;
+
+	  /* Center and scale the image nicely */
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+
 	.bg-main {
 		background-image: url("images/background.jpg");
 		/* Full height */
@@ -26,6 +39,8 @@ html, body {
 	  background-size: cover;
 	}
 }
+
+
 
 /* Mobile main screen style */
 @media only screen and (max-width:480px){
