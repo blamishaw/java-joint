@@ -68,15 +68,16 @@
       </nav>
       <!-- End of Navbar HTML -->
 
+      
       <h1>Contact Us.</h1>
-      <div class="bg-partner">
+      <div class="bg-content">
         <div class="main-content">
           <div class="our-mission-text">
              <h2 class="contact-header">We love to hear from you!</h2>
              <h3 class="contact-header2">How to Reach Us:</h3>
              <ul>
                 <li><strong>Phone:</strong> +44 1234 567890</li>
-                <li><strong>Address:</strong> 12 Coffee Rd, London, UK, E1 4PU</li>
+                <li><strong>Address:</strong> 12 Coffee Rd, London, E1 4PU, UK </li>
                 <li><strong>Email:</strong> contact@javajoint.com</li>  
             </ul>
               <a name="gold"></a>
@@ -85,29 +86,38 @@
             <img src="images/meeting.jpg" class="img-responsive" alt="coffee">
           </div>
         </div>
+      </div>
 
-        <div class="bg-partner">
-          <div class="main-content">
-            <div class="our-mission-img">
-                    <img src="images/meeting2.jpg" class="img-responsive" alt="coffee">
-            </div>
-            <div class="our-mission-text">
-               <h2 class="contact-header">Or Contact Us Here!</h2>
-               <form>
-                    </br> 
-                    <div class="form-group">
-                        <label for="formGroupExampleInput"><strong>Your Email:</strong></label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ie: name@example.com">
-                    </div>
-                    <div class="form-group">
-                            <label for="exampleFormControlTextarea1"><strong>Message:</strong></label>
-                            <textarea class="form-control" id="formGroupExampleInput", placeholder="ie: 'I love coffee!'" rows="3"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-outline-dark">Send</button>
-                </form>
-                
-            </div>
-            
+      <div class="bg-content">
+        <div class="main-content">
+          <div class="our-mission-img">
+                  <img src="images/meeting2.jpg" class="img-responsive" alt="coffee">
+          </div>
+          <div class="our-mission-text">
+              <h2 class="contact-header">Or Contact Us Here!</h2>
+              
+              <!-- In-page Email section -->
+              <form>
+                  </br> 
+                  <div class="form-group">
+                      <label for="formGroupExampleInput"><strong>Your Email:</strong></label>
+                      <input type="text" class="form-control" id="form1" placeholder="ie: name@example.com">
+                  </div>
+                  <div class="form-group">
+                          <label for="exampleFormControlTextarea1"><strong>Message:</strong></label>
+                          <textarea class="form-control" id="form2", placeholder="ie: 'I love coffee!'" rows="3"></textarea>
+                  </div>
+
+                  <button type="button" class="btn btn-outline-dark" onclick='sendMessage()'>Send</button>
+                  <!--Button Alert Scripting-->
+                  <script>
+                      function sendMessage() {
+                        document.getElementById("form1").value = "";
+                        document.getElementById("form2").value = "";
+                        alert("Message Sent. Thank you!");
+                      }
+                  </script>
+              </form>  
           </div>
         </div>
       </div>
