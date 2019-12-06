@@ -42,10 +42,10 @@ h5 {
   font-weight: bold;
 }
 
+
 .card-spacing {
-  min-width: 300px;
+  min-width: 150px;
   max-width: 400px;
-  flex-basis: auto; /* default value */
-  flex-grow: 1;
   box-shadow: 0 5px 4px -1px rgba(0,0,0,.5);
+  flex: 0;
 }
