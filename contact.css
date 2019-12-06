@@ -72,8 +72,8 @@ h1 {
 }
 
 .contact-img img{
-	max-width: 80%;
-	 min-width: 75%;
+	 max-width: 75%;
+	 min-width: 60%;
 	 border-radius: 30px;
 	 align-items: center;
 }
