@@ -53,3 +53,27 @@ h1 {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 75%;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.contact-img {
+	object-fit: cover;
+	margin: 3vw 3vw;
+	min-width: 20px;
+	grid-area: "image";
+}
+
+.contact-img img{
+	max-width: 80%;
+	 min-width: 75%;
+	 border-radius: 30px;
+	 align-items: center;
+}
