@@ -1,0 +1,79 @@
+@import "main.css";
+
+body {
+  background-color :#F5F5F5;
+}
+
+h1 {
+  font-family: Garamond;
+}
+
+@media screen and (min-width: 961px){
+  h1 {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 12%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 961px){
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30%;
+    margin-bottom: 0;
+  }
+}
+
+.bg-partner {
+  background-color: #FFFFFF;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.contact-header {
+    font-size: 60px;
+    font-weight: bold;
+	font-family: Lobster;
+}
+
+.contact-header2 {
+    font-size: 30px;
+    font-weight: bold;
+	font-family: Lobster;
+}
+
+.bg-content {
+  background-color: #FFFFFF;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 75%;
+  border-radius: 30px;
+  align-content: center;
+}
+
+.contact-img {
+	object-fit: cover;
+	margin: 3vw 3vw;
+	min-width: 20px;
+	grid-area: "image";
+}
+
+.contact-img img{
+	 max-width: 75%;
+	 min-width: 60%;
+	 border-radius: 30px;
+	 align-items: center;
+}

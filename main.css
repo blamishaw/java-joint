@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-	font-family: Courier;
+	font-family: Helvetica;
 	scroll-behavior: smooth;
 }
 
@@ -13,19 +13,34 @@ html, body {
 
 /* Desktop main screen style */
 @media only screen and (min-width: 480px) {
-	.bg-main {
+	.bg-index {
 		background-image: url("images/background.jpg");
 		/* Full height */
 		height: 100%;
 		overflow: hidden;
 
 	  /* Center and scale the image nicely */
-		background-attachment: fixed;
+	  background-attachment: fixed;
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	}
+
+	.bg-main {
+		background-image: url("images/background.jpg");
+		/* Full height */
+		height: 35%;
+		overflow: hidden;
+
+	  /* Center and scale the image nicely */
+	  background-attachment: fixed;
+	  background-position: left top;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
 }
+
+
 
 /* Mobile main screen style */
 @media only screen and (max-width:480px){
@@ -104,7 +119,7 @@ html, body {
 .sub-title {
 	font-family: Garamond;
 	font-size: 40px;
-	color: white;
+	color: #f5f5f5;
 }
 
 .smaller {
@@ -170,14 +185,14 @@ html, body {
 	position:relative;
 }
 
-.contact-container {
-	margin: -8vw 1vw;
+.connect-container {
+	margin: -18vw 1vw;
 }
 
-.contact-us-header {
-	font-size: 12vw;
+.connect-us-header {
+	font-size: 9vw;
 	font-family: Garamond bold;
-	color: white;
+	color: #f5f5f5;
 }
 
 
@@ -233,13 +248,14 @@ html, body {
 .socials {
   margin: -20vw 36vw;
 	font-size: 30px;
+	width: 100%
 }
 
 
 .fa {
   padding: 25px;
   width: 80px;
-	height: 80px;
+  height: 80px;
   text-align: center;
   text-decoration: none;
   margin: 9px 2px;
